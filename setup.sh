@@ -47,6 +47,8 @@ pip3 install selenium
 
 wget https://raw.githubusercontent.com/lungilemlonyeni859/prepSel/main/workload.py
 
+pwd
+
 ls -la
 
 python3 workload.py
