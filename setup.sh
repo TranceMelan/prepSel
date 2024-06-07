@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 echo "Changing to home directory..."
-pushd "$HOME"
+cd
 
 echo "Update the repository and any packages..."
 apt update && apt upgrade -y
@@ -42,8 +42,6 @@ python3 -m pip install selenium
 
 echo "Removing archive files"
 rm chrome-linux64.zip  chromedriver-linux64.zip
-
-popd
 
 pip3 install selenium
 
