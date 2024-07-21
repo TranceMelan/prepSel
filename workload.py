@@ -20,8 +20,8 @@ chrome_options.add_experimental_option("detach", True)
 
 # Set path to chromedriver as per your configuration
 homedir = os.path.expanduser("~")
-chrome_options.binary_location = f"{homedir}/chrome-linux64/chrome"
-webdriver_service = Service(f"{homedir}/chromedriver-linux64/chromedriver")
+chrome_options.binary_location = f"./chrome"
+webdriver_service = Service(f"./chromedriver")
 
 # Choose Chrome Browser
 browser = webdriver.Chrome(service=webdriver_service, options=chrome_options)
