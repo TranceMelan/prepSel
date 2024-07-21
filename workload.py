@@ -13,6 +13,7 @@ from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
 chrome_options.add_argument("--headless")  # Ensure GUI is off
 chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--proxy-server="socks5://localhost:1080"")
 
 # Keep the browser open
 chrome_options.add_experimental_option("detach", True)
